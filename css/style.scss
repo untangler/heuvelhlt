@@ -36,38 +36,27 @@ header {
   display: flex;
   // justify-items: space-between;
 }
-
-.logo-wrapper {
+a:hover {
+    #hlt_logo {
+        text {
+            fill: $link-color;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+}
+header .logo-wrapper {
   padding: 0.5em;
+  height: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
   #hlt_logo {
+    height: 70%;
       text {
         fill: $logo_color;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
   }  
-}
-
-.logo-wrapper:hover {
-  #logo_svg {
-    // height: calc(#{$header-height} + 0.4em);
-    #divider  {
-      stroke: rgb(149, 177, 253);
-    }
-
-    #Untangle, #Logic {
-      fill: rgb(149, 177, 253);
-    }
-
-    #Logic {
-      transition: all 0.5s;
-      transition-delay: 0.5s;
-    }
-   
-    #UL_overlay {
-      stroke-dasharray: 347.5;
-    }
-  }
-
-  
 }
 
 
@@ -91,6 +80,8 @@ header {
     text-align: justify;
     line-height: 2;
     background: $content-color;
+    padding: 1em;
+  
     // min-height: calc(100vh - #{$header-height} - #{$breadcrumb-height} - #{$nav-height});
 
     a {
@@ -104,6 +95,98 @@ header {
       color: $accent-color;
     }
   }
+}
+
+.content {
+
+    .logo-wrapper {
+        background: $header-color;
+
+        padding: 0.5em;
+        
+        #logo_svg {
+          height: calc(#{$header-height});
+          width: fit-content;
+          
+          #UL {
+            stroke: $logo_color;
+          }
+      
+          #UL_overlay {
+            stroke: white;
+            stroke-dasharray: 0, 4000;
+            stroke-dashoffset: 5;
+            transition: all 1s;
+          }
+      
+          #Untangle, #Logic {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            // font-size: 50px;
+            font-size: 20px;
+            line-height:  1.25;
+            stroke-width:0.654126
+            // stroke-width:1.29631;
+          }
+      
+          #untangle-text {
+          }
+      
+          #Untangle {
+            fill: $logo_color_sec;
+            transition: all 0.5s;
+            // stroke-width:0.550067;
+          }
+      
+          #Untangle2, #Logic2 {
+            display: none;
+          }
+      
+          #Logic {
+            fill: $logo_color_ter;
+            transition: all 0.5s;
+            transition-delay: 0.5s;
+            // stroke-width:1.29631;
+          }
+      
+          #Logic_overlay, #Untangle_overlay, #divider_overlay {
+            display: none;
+            visibility: hidden; 
+            stroke: none;
+            fill: none;
+          }
+      
+          #divider {
+            stroke: $logo_color_ter;
+          }
+      
+        }
+        
+      }
+      
+      .logo-wrapper:hover {
+        #logo_svg {
+          // height: calc(#{$header-height} + 0.4em);
+          #divider  {
+            stroke: rgb(149, 177, 253);
+          }
+      
+          #Untangle, #Logic {
+            fill: rgb(149, 177, 253);
+          }
+      
+          #Logic {
+            transition: all 0.5s;
+            transition-delay: 0.5s;
+          }
+         
+          #UL_overlay {
+            stroke-dasharray: 347.5;
+          }
+        }
+      
+        
+      }
+      
 }
 
 /* breadcrumb */
