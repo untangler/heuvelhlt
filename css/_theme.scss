@@ -1,0 +1,262 @@
+@import "variables";
+
+input, textarea {
+  margin-bottom: 30px;
+  padding: 0.6em;
+  border-radius: 0.6em;
+  border: none;
+  background: $contact-color;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: all 200ms ease-in-out;
+  &.error {
+    border: 1px solid red;
+  }
+}
+
+input:focus, textarea:focus {
+  border: 2px solid $dark-accent-color;
+}
+
+.btn {
+  background: white;
+  color: $accent-color;
+  padding: 0.5em;
+  font-weight: bold;
+  border-radius: 2em; 
+  border: 4px solid $accent-color;
+  outline: none;
+}
+
+.btn:hover, .btn:focus {
+  background: $accent-color;
+  color: white;
+  border: 4px solid $accent-color;
+  outline: none;
+}
+
+.btn[type="submit"]{ 
+  background: $accent-color;
+  border: none;
+  padding: 1em;
+  color: white;
+  margin-bottom: 0;
+}
+
+.btn[type="submit"]:hover, .btn[type="submit"]:focus{ 
+  background: $dark-accent-color;
+  border: none;
+  padding: 1em;
+  color: white;
+}
+
+a {
+  font-size: 0.8rem;
+  padding: 1em; 
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover,  a:focus {
+  color: $accent-color;
+}
+
+a.current-page, a.current-page:hover {
+  color: $dark-accent-color;
+}
+
+.more-content {
+  overflow: none;
+  // contain: paint;
+  padding:  0;
+  height: 0px;
+  transition: height 3s ease-in-out;
+  p, ul {
+    display: none;
+  }
+}
+
+.content > div > div {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.more-content.show {
+  height: auto;
+  padding: 1em 0;
+  p {
+    display: inline;
+  }
+
+  ul {
+    display: block;
+    li {
+      display: list-item;
+    }
+  }
+
+}
+
+.readmore-elm.show, .readless-elm.show {
+  display: block;
+}
+
+.readmore-elm, .readless-elm {
+  display: none;
+  align-self: center;
+}
+
+.env_back {
+  fill: $dark-accent-color;
+}
+
+.env_background {
+  fill: $header-secondary-color;
+  
+}
+
+.env_bottom {
+  fill: $logo_color;
+}
+
+.env_top {
+  // fill: rgb(97, 217, 247);
+  fill: $accent-color;
+
+}
+
+#letter {
+  fill:#f2f4f4;
+  // box-shadow: $shadow ;
+  stroke: #c4bfbf;
+  stroke-width: 2;
+}
+
+
+.contact-element {
+  $env-width: 3em;
+
+  position: relative;
+  padding: 0 !important;
+  background: transparent !important;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  // border-radius: 2em;
+  z-index: 2;
+ 
+
+  div.envelope-wrapper {
+    // background: none;
+    // background: $navigation-color;
+    // border-radius: 2em;
+    // padding: 1em;
+    background: transparent !important;
+
+    padding-top: 0;
+    position: relative;
+
+    .icon {
+      height: auto;
+      width: $env-width; 
+      position: relative;
+      top: -8px;
+      // box-shadow: $shadow ;
+    }
+
+    .icon-env-closed {
+      display: block;
+    }
+  
+    .icon-env-opened {
+      display: none;
+    }
+  
+    #letter {
+      transition: all 1s ease-in-out;
+      transition-delay: 3s;
+      transform: translate(0, 0);
+      // fill: yellow;
+    }
+  }
+
+  a {
+    display: none;
+    margin: 0;
+    text-align: center;
+    // padding: 0 1em !important;
+    font-weight: bold;
+    color: $content-link-color;
+    opacity: 1;
+    font-size: 1rem;
+    background: rgb(204, 204, 204);
+    padding: 0em 1em !important;
+    border-radius: 0 2em 2em  0 ;
+  }
+}
+
+.contact-element.open {
+  div.envelope-wrapper {
+  .icon-env-closed {
+    display: none;
+   }  
+
+  .icon-env-opened {
+    display: block;
+  }  
+
+  #letter {
+    transform: translate(0, -10px);
+    // fill: red;
+  }
+  
+}
+
+  a {
+    display: block;
+  }
+
+  a:hover, a:focus {
+    color: $accent-color;
+  }
+
+
+}
+
+
+// #letter {
+
+  // animation: pop-out 1s infinite;
+
+// }
+
+@keyframes pop-out {
+  30% {
+    transform: translate(0, -10px);
+    // fill: scarlet;
+
+  }
+  40% {
+    transform: translate(0, -10px) rotate(-4deg);
+    // transform: rotate(-4deg);
+  }
+  // 50% {
+  //   transform: translate(0, -10px);
+  // }
+  60% {
+    transform: translate(0, -10px) rotate(4deg);
+    // transform: rotate(-4deg);
+  }
+  70% {
+    transform: translate(0, -10px);
+    // fill: scarlet;
+
+  }
+
+  100% {
+    transform: translate(0, 0px);
+    // fill: yellow;
+  }
+}

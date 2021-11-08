@@ -1,0 +1,16 @@
+@import "variables";
+
+header {
+    z-index: 2;
+}
+
+.breadCrumb {
+    margin-top: $header-height;
+    position: fixed;
+    background: $header-secondary-color;
+}
+
+.content-wrapper {
+    margin-top: calc(#{$header-height} + #{$breadcrumb-height});
+    // min-height: ($header-height + $breadcrumb-height + $nav-height);
+}
