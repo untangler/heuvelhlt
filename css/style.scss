@@ -81,7 +81,10 @@ header .logo-wrapper {
     line-height: 2;
     background: $content-color;
     padding: 1em;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     // min-height: calc(100vh - #{$header-height} - #{$breadcrumb-height} - #{$nav-height});
 
     a {
@@ -100,20 +103,20 @@ header .logo-wrapper {
 .content {
 
     .logo-wrapper {
-        background: $header-color;
+        // background: $header-color;
 
         padding: 0.5em;
         
         #logo_svg {
-          height: calc(#{$header-height});
+          height: calc(#{$header-height} * 2);
           width: fit-content;
           
           #UL {
-            stroke: $logo_color;
+            stroke: $ul-light-bckgrnd;
           }
       
           #UL_overlay {
-            stroke: white;
+            stroke: $ul-light-bckgrnd-anim;
             stroke-dasharray: 0, 4000;
             stroke-dashoffset: 5;
             transition: all 1s;
@@ -132,7 +135,7 @@ header .logo-wrapper {
           }
       
           #Untangle {
-            fill: $logo_color_sec;
+            fill: $untangle-light-bckgrnd;
             transition: all 0.5s;
             // stroke-width:0.550067;
           }
@@ -142,7 +145,7 @@ header .logo-wrapper {
           }
       
           #Logic {
-            fill: $logo_color_ter;
+            fill: $logic-light-bckgrnd;
             transition: all 0.5s;
             transition-delay: 0.5s;
             // stroke-width:1.29631;
@@ -156,7 +159,7 @@ header .logo-wrapper {
           }
       
           #divider {
-            stroke: $logo_color_ter;
+            stroke: $divider-light-bckgrnd;
           }
       
         }
@@ -167,11 +170,11 @@ header .logo-wrapper {
         #logo_svg {
           // height: calc(#{$header-height} + 0.4em);
           #divider  {
-            stroke: rgb(149, 177, 253);
+            stroke: $accent-light-bckgrnd-anim;
           }
       
           #Untangle, #Logic {
-            fill: rgb(149, 177, 253);
+            fill: $accent-light-bckgrnd-anim;
           }
       
           #Logic {
@@ -188,6 +191,7 @@ header .logo-wrapper {
       }
       
 }
+
 
 /* breadcrumb */
 
