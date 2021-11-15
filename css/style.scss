@@ -35,6 +35,10 @@ header {
   align-items: center;
   display: flex;
   // justify-items: space-between;
+
+  a {
+    font-size: 1rem;
+  }
 }
 a:hover {
     #hlt_logo {
@@ -45,13 +49,13 @@ a:hover {
     }
 }
 header .logo-wrapper {
-  padding: 0.5em;
+  // padding: 0.5em;
   height: 100%;
   display: flex;
   justify-self: center;
   align-items: center;
   #hlt_logo {
-    height: 70%;
+    // height: 70%;
       text {
         fill: $logo_color;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
