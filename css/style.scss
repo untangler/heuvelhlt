@@ -112,7 +112,7 @@ header .logo-wrapper {
         padding: 0.5em;
         
         #logo_svg {
-          height: calc(#{$header-height} * 2);
+          height: calc(#{$header-height} * 1.5);
           width: fit-content;
           
           #UL {
