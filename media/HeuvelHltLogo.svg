@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="206.9126"
+   height="44.116596"
+   id="hlt_bg"
+   version="1.1"
+   sodipodi:docname="HeuvelHltLogo.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata867">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     id="namedview10237"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:zoom="3.7233333"
+     inkscape:cx="106.74332"
+     inkscape:cy="24.649091"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="311"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="hlt_bg" />
+  <defs
+     id="defs10230">
+    <path
+       id="headpath"
+       d="M 50,100 C 240,50 400,82 1200,70"
+       inkscape:connector-curvature="0" />
+  </defs>
+  <text
+     id="text10234"
+     transform="translate(-42.901258,-60.851822)">
+    <textPath
+       xlink:href="#headpath"
+       id="textPath10232"
+       style="fill:#d4d9f2;fill-opacity:1">Van den Heuvel HLT Consultancy</textPath>
+  </text>
+</svg>
